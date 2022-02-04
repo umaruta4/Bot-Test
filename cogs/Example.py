@@ -11,6 +11,7 @@ class Example(commands.Cog):
     # prefix for example feature
     @commands.group()
     async def ex(self, ctx):
+        """ Just an example """
         if ctx.invoked_subcommand is None:
             await ctx.send("Do 'b!ex help'")
 

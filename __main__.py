@@ -32,6 +32,11 @@ async def unload(ctx,extension):
 
 @client.command()
 @commands.check(is_owner)
+async def reload(ctx, extension):
+    client.reload_extension('cogs.{}'.format(extension))
+
+@client.command()
+@commands.check(is_owner)
 async def load_pack(ctx, extension):
     for filename in os.listdir('./cogs/{}'.format(extension)):
         if filename.endswith('.py'):
@@ -49,6 +54,8 @@ async def unload_pack(ctx,*, extension):
 
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
+        if filename[-3] == '__init__':
+            continue
         client.load_extension('cogs.{}'.format(filename[:-3]))
 
 client.run(TOKEN)
