@@ -279,7 +279,7 @@ class StockModel(commands.Cog):
     @commands.group(name = "stock")
     async def sm(self, ctx):
         if ctx.invoked_subcommand is None:
-            self.help(ctx)
+            await self.help(ctx)
 
     @sm.group()
     async def help(self, ctx):
