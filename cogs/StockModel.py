@@ -1,3 +1,5 @@
+# Feature made by Yuusei
+
 import math
 import random
 import matplotlib.pyplot as plt
@@ -329,7 +331,8 @@ class StockModel(commands.Cog):
             txt += "`!bal` to check your (or someone else's) balance\n"
             txt += "`!buy d 15000` to spend $15000 to buy D KOIN\n"
             txt += "`!sell d` to sell all of your D KOIN\n"
-            txt += "`!sell d 1.75` to sell 1.75 D KOIN\n"
+            txt += "`!sell d 1.75` to sell 1.75 D KOIN\n\n\n\n"
+            txt += "Feature Made By Yuusei"
             # txt += '`$changename (name)` to change your name.\n'+'Your current name is {}'.format(d['name'])
             await ctx.send(txt)
 
