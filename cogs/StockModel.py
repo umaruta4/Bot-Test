@@ -276,7 +276,7 @@ with open(GAMEDATA_DIR, 'r') as f:
 
 class StockModel(commands.Cog):
 
-    @commands.group()
+    @commands.group(name = "stock")
     async def sm(self, ctx):
         if ctx.invoked_subcommand is None:
             self.help(ctx)
