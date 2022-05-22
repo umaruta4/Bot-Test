@@ -49,4 +49,4 @@ def setup(client):
 
 def teardown(client):
     unload_dir(client, subfile_dir)
-    cleint.remove_cog("Codeforce")
+    client.remove_cog("Codeforce")

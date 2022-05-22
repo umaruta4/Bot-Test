@@ -52,11 +52,11 @@ class Handle:
 
 
 def setup(client):
-    #client.add_cog(HandleCodeforce(client))
+    client.add_cog(HandleCodeforce(client))
     pass
 
 def teardown(client):
-    #client.remove_cog("HandleCodeforce")
+    client.remove_cog("HandleCodeforce")
     pass
 
     
